@@ -23,4 +23,7 @@ Route::get('/callback/{provider}', [App\Http\Controllers\GoogleLoginController::
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Livewire route
+Route::get('/livewire',[App\Http\Controllers\LiveWireController::class,'index'])->name('live-wire');
 ?>
